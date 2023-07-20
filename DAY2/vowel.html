@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Vowels</title>
+    </head>
+    <body>
+        <script>
+        function count(str) { 
+        const count = str.match(/[aeiou]/gi).length;
+        return count;
+        }
+        const string = prompt('Enter a string: ');
+        const result = count(string);
+        console.log(result);
+        alert("There are " + result + " vowels in your word/sentence.")
+        </script>
+    </body>
+</html>
